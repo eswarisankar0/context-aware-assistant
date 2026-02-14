@@ -1,0 +1,30 @@
+{
+    "preferences": {
+        "meeting_time": "I prefer meetings after 10 AM"
+    },
+    "tasks": [
+        {
+            "task": "Remind me to call mom Sunday",
+            "time": "Detected time"
+        },
+        {
+            "task": "Remind me to call mom Sunday",
+            "time": "Detected time"
+        },
+        {
+            "task": "Remind me to call mom Sunday at 7 PM",
+            "time": "7 PM"
+        }
+    ],
+    "conversation_history": [
+        "I prefer meetings after 10 AM",
+        "Remind me to call mom Sunday",
+        "Schedule meeting tomorrow",
+        "When did I say call mom?",
+        "I prefer meetings after 10 AM",
+        "Schedule meeting tomorrow",
+        "Remind me to call mom Sunday",
+        "Remind me to call mom Sunday at 7 PM",
+        "When did I mention calling mom?"
+    ]
+}
