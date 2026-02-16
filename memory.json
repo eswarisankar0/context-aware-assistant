@@ -1,6 +1,6 @@
 {
     "preferences": {
-        "meeting_time": "I prefer meetings after 10 AM"
+        "meeting_time": "set preference for morning time"
     },
     "tasks": [
         {
@@ -22,6 +22,42 @@
         {
             "task": "Reminder to attend meetin at 10 pm",
             "time": "10 pm"
+        },
+        {
+            "task": "remind me about the project",
+            "time": "No time detected"
+        },
+        {
+            "task": "remind me about the project  ",
+            "time": "No time detected"
+        },
+        {
+            "task": "remind me about taxes",
+            "time": "No time detected"
+        },
+        {
+            "task": "remind me  to submit undertaking form to kavita mam  on 17 feb 2026",
+            "time": "feb 20"
+        },
+        {
+            "task": "REMIND ME TO submit undertaking form to kavita mam on feb 18 2026 ",
+            "time": "No time detected"
+        },
+        {
+            "task": "REMIND ME TO submit undertaking form to kavita mam on feb 18 2026  10:00pm",
+            "time": "10:00pm"
+        },
+        {
+            "task": "Remind about bill payment with date",
+            "time": "No time detected"
+        },
+        {
+            "task": "remind me to submit undertaking form to kavita mam on 17 feb 2026",
+            "time": "17 feb 2026"
+        },
+        {
+            "task": "send an email to john sir by 5 pm",
+            "time": "5 pm"
         }
     ],
     "conversation_history": [
@@ -38,6 +74,37 @@
         "Reminder to attend meetin at 10 pm",
         "Submit undertaking form to Kavitha Maam at 10 am",
         "Submit undertaking form to Kavitha Maam at 12 pm",
-        "Submit unertaking form to Kavitha maam at 10 am"
+        "Submit unertaking form to Kavitha maam at 10 am",
+        "hello",
+        "schedule a meeting tomorrow at 3pm",
+        "schedule a meeting tomorrow at 3pm",
+        "remind me about the project",
+        "create a task to submit the report",
+        "set my preference to quiet hours from 9 to 5",
+        "what did I say earlier",
+        "schedule a meeting tomorrow at 3pm",
+        "remind me about the project  ",
+        "create a task to submit the report",
+        "set my preference to quiet hours",
+        "retrieve what I said",
+        "schedule meeting tomorrow",
+        "remind me about taxes",
+        "what have I told you",
+        "send an email to alice",
+        "set preference for morning time",
+        "submit undertaking form to kavita mam",
+        "remind me  to submit undertaking form to kavita mam  on 17 feb 2026",
+        "REMIND ME TO submit undertaking form to kavita mam on feb 18 2026 ",
+        "REMIND ME TO submit undertaking form to kavita mam on feb 18 2026  10:00pm",
+        "Remind about bill payment with date",
+        "remind me to submit undertaking form to kavita mam on 17 feb 2026",
+        "schedule meeting tomorrow with alice",
+        "what have I told you about the project",
+        "send an email to john sir by 5 pm",
+        "set preference for morning time",
+        "remind me to submit undertaking form to kavita mam on 17 feb 2026",
+        "remind me to submit undertaking form to kavita mam on 17 feb 2026",
+        "remind me to submit undertaking form to kavita mam on 17 feb 2026",
+        "remind me to submit undertaking form to kavita mam on 17 feb 2026"
     ]
 }
