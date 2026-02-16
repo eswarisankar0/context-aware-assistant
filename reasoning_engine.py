@@ -28,11 +28,12 @@ def reason(intent_data, user_input):
             return {"action": "schedule_default"}
 
     if intent == "set_reminder":
-     return {
-        "action": "store_task",
-        "task": user_input,
-        "time": intent_data["time"] if intent_data["time"] else "No time detected"
-    }
+        return {
+            "action": "store_task",
+            "task": user_input,
+            "time": intent_data["time"] if intent_data["time"] else "No time detected",
+            "person": intent_data["person"] if intent_data["person"] else None
+        }
 
 
     if intent == "retrieve_task":
@@ -40,6 +41,14 @@ def reason(intent_data, user_input):
         return {
             "action": "semantic_recall",
             "context": context
+        }
+
+    if intent == "create_task":
+        return {
+            "action": "store_task",
+            "task": user_input,
+            "time": intent_data["time"] if intent_data["time"] else "No time detected",
+            "person": intent_data["person"] if intent_data["person"] else None
         }
 
     return {"action": "unknown"}

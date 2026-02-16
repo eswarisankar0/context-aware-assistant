@@ -1,30 +1,29 @@
-from sentence_transformers import SentenceTransformer, util
 import json
-import torch
+from difflib import SequenceMatcher
 
 MEMORY_FILE = "memory.json"
 
-# Load transformer model once
-model = SentenceTransformer("all-MiniLM-L6-v2")
+def simple_similarity(a, b):
+    """Calculate basic string similarity score"""
+    return SequenceMatcher(None, a.lower(), b.lower()).ratio()
 
 def semantic_search(query):
-    with open(MEMORY_FILE, "r") as f:
-        memory = json.load(f)
+    try:
+        with open(MEMORY_FILE, "r") as f:
+            memory = json.load(f)
+    except FileNotFoundError:
+        return None
 
-    history = memory["conversation_history"]
+    history = memory.get("conversation_history", [])
 
     if not history:
         return None
 
-    # Encode query and history
-    query_embedding = model.encode(query, convert_to_tensor=True)
-    history_embeddings = model.encode(history, convert_to_tensor=True)
+    # Compute similarity scores using simple string matching
+    scores = [simple_similarity(query, h) for h in history]
 
-    # Compute cosine similarity
-    scores = util.cos_sim(query_embedding, history_embeddings)
-
-    best_index = torch.argmax(scores)
-    best_score = scores[0][best_index].item()
+    best_index = max(range(len(scores)), key=lambda i: scores[i])
+    best_score = scores[best_index]
 
     return {
         "match": history[best_index],
