@@ -1,6 +1,9 @@
 import json
+import os
 
-MEMORY_FILE = "memory.json"
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+MEMORY_FILE = os.path.join(SCRIPT_DIR, "memory.json")
 
 def load_memory():
     with open(MEMORY_FILE, "r") as f:

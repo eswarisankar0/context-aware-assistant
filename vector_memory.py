@@ -1,7 +1,10 @@
 import json
+import os
 from difflib import SequenceMatcher
 
-MEMORY_FILE = "memory.json"
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+MEMORY_FILE = os.path.join(SCRIPT_DIR, "memory.json")
 
 def simple_similarity(a, b):
     """Calculate basic string similarity score"""
